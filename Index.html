@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevLoom Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+
+    
+    <style>
+
+     @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #00cfff;
+  white-space: nowrap;
+  letter-spacing: .1em;
+  animation: typing 4s steps(40, end), blink 0.7s step-end infinite;
+}
+
+.typewriter-second {
+  overflow: hidden;
+  border-right: .15em solid #ffffff;
+  white-space: nowrap;
+  letter-spacing: .1em;
+  color: #ffffff;
+}
+
+.typewriter, .typewriter-second {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00bfff;
+  display: inline-block;
+}
+
+.typewriter, .typewriter-second {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00bfff;
+  display: inline-block;
+}
+
+.no-cursor::after {
+  content: ''; 
+  display: none;
+}
+
+.typewriter-second.no-cursor {
+  border-right: none;
+  animation: none;
+}
+
+
+      
+
+
+      body {
+        background-color: #121212;
+        color: #f1f1f1;
+        
+      }
+
+      .hero {
+        background: url('Images/Image.png') center/cover no-repeat;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+      .hero {
+        height: 70vh; 
+      }
+
+      .hero h1 {
+       font-size: 2rem;
+       }
+
+      .hero p {
+      font-size: 1.25rem;
+      }
+      }
+
+      .navbar {
+        background: linear-gradient(135deg, #0c0c1d, #1f2235);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+      }
+
+      .nav-link {
+  position: relative;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ffc3;
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #00ffc3 !important;
+}
+
+.navbar-toggler {
+  border-color: #00ffc3;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300ffc3' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+      .card {
+        background: linear-gradient(135deg, #1a1f2b, #263240);
+        border: 1px solid #2e3d4f;
+        box-shadow: 0 4px 8px rgba(0, 255, 204, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.8);
+      }
+
+      .btn-outline-light:hover {
+        background-color: #00ffc3;
+        color: #000;
+      }
+
+      .services-container {
+        background: linear-gradient(135deg, #121821, #1c2432);
+        border-radius: 16px;
+        padding: 60px 20px;
+      }
+
+      h2 {
+        color: #00ffc3;
+      }
+
+      footer {
+        background: #0e0e15;
+      }
+
+      .bi {
+      transition: transform 0.3s ease-in-out;
+      }
+
+      .bi:hover {
+      transform: scale(1.3);
+      color: #00e0ff;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html">DevLoom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero text-center text-white">
+ <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+  <h1 class="display-4 fw-bold mb-3">DevLoom Technologies</h1>
+
+  <p class="lead text-info typewriter" style="font-size: 1.5rem;">We weave code into innovation.</p>
+  <p class="lead typewriter-second" style="font-size: 1.2rem;">We Code. We Build. We Deliver.</p>
+
+  <a href="#services" class="btn btn-outline-light btn-lg mt-4">Explore Services</a>
+</div>
+
+
+</section>
+
+
+   <div class="container my-5" id="services">
+  <h2 class="text-center mb-4">Our Services</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card text-white bg-dark h-100">
+        <div class="card-body d-flex flex-column justify-content-between align-items-center text-center">
+          <div>
+            <i class="bi bi-laptop-fill display-4 mb-3 text-info"></i>
+            <h5 class="card-title">Software Development</h5>
+            <p class="card-text">Custom desktop and mobile solutions built for performance.</p>
+          </div>
+          <a href="software.html" class="btn btn-outline-light mt-3">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card text-white bg-dark h-100">
+        <div class="card-body d-flex flex-column justify-content-between align-items-center text-center">
+          <div>
+            <i class="bi bi-globe display-4 mb-3 text-primary"></i>
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Responsive, scalable websites and web apps that drive results.</p>
+          </div>
+          <a href="web.html" class="btn btn-outline-light mt-3">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card text-white bg-dark h-100">
+        <div class="card-body d-flex flex-column justify-content-between align-items-center text-center">
+          <div>
+            <i class="bi bi-pc-display display-4 mb-3 text-success"></i>
+            <h5 class="card-title">Sale of Computers</h5>
+            <p class="card-text">Top-tier computers, built and tested for all levels of users.</p>
+          </div>
+          <a href="computers.html" class="btn btn-outline-light mt-3">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Features Section -->
+<div class="container my-5" id="features">
+  <h2 class="text-center mb-4">Features</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card text-white bg-dark h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">Who Are We?</h5>
+          <p class="card-text">
+            DevLoom Technologies is a forward-thinking tech firm driven by innovation. We are a team of developers, designers, and digital architects passionate about crafting high-performance solutions for modern challenges.
+            DevLoom Technologies was founded by <strong>Erick.M™</strong>, a visionary developer with a passion for building digital solutions that scale. What started as a personal tech journey has evolved into a powerhouse team of engineers, designers, and problem-solvers dedicated to reshaping the future of software and web experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card text-white bg-dark h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">What Do We Do?</h5>
+          <p class="card-text">
+            From scalable web platforms to robust software systems, we design, develop, and deploy digital experiences that are future-ready. We turn lines of code into business powerhouses.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="card text-white bg-dark h-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">How Can You Reach Us?</h5>
+          <p class="card-text">
+            Let’s build something amazing together. Reach out via our <a href="contact.html" class="text-info text-decoration-none">Contact Page</a>, or connect with us on LinkedIn and GitHub. We’re just a click away.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <footer class="text-center text-white py-4">
+<small>Erick.M™ © 2025 DevLoom Technologies. Built with ❤️ and innovation.All rights reserved.  </small>
+   </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script>
+  function typeWriter(element, text, speed, delay = 0, callback = null) {
+    let i = 0;
+    element.innerHTML = '';
+    setTimeout(() => {
+      function typing() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typing, speed);
+        } else if (callback) {
+          callback(); // Call the callback function after typing is complete
+        }
+      }
+      typing();
+    }, delay);
+  }
+window.onload = () => {
+  const firstLine = document.querySelector(".typewriter");
+  const secondLine = document.querySelector(".typewriter-second");
+
+  typeWriter(firstLine, "We weave code into innovation.", 100, 0, () => {
+    secondLine.classList.remove("no-cursor");
+    typeWriter(secondLine, "We Code. We Build. We Deliver.", 100, 500);
+  });
+};
+
+</script>
+
+
+ 
+</body>
+</html>

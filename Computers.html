@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sale of Computers | DevLoom Technologies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0c924b, #1d1064, #2c6178);
+      background-size: cover;
+      background-position: center;
+      padding: 150px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 255, 204, 0.05);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      color: #cccccc;
+    }
+
+    .btn-custom {
+      background-color: #4a0f8d;
+      color: white;
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #00b39f;
+      transform: scale(1.1);
+    }
+
+    .btn-custom:active {
+      transform: scale(0.95);
+    }
+
+    .product-section {
+      padding: 60px 20px;
+    }
+
+    .product-card {
+      background-color: #1a1a1a;
+      border: none;
+      color: #f0f0f0;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0, 203, 169, 0.3);
+    }
+
+    .product-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer {
+      background-color: #000;
+      color: #999;
+    }
+
+    .overlapping-section {
+      position: relative;
+      text-align: center;
+      color: white;
+      z-index: 1;
+      padding: 60px 20px;
+    }
+
+    .overlapping-section h2,
+    .overlapping-section p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .overlapping-section img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+   a.btn-custom {
+  background-color: #4a0f8d;
+  color: white;
+  border: none;
+  cursor: pointer !important;
+  z-index: 2;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+a.btn-custom:hover {
+  background-color: #00b39f;
+  transform: scale(1.05);
+}
+
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      30% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      70% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">DevLoom Technologies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="software.html">Software Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Web Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="computers.html">Computers</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content animate__animated animate__fadeInUp">
+    <h1>Power Up with DevLoom Machines</h1>
+    <p>Explore high-performance laptops and desktops built for creators, coders, gamers, and future AI masters.</p>
+    <a href="#products" class="btn btn-custom mt-3">Browse Our Collection</a>
+  </div>
+</section>
+
+<!-- Product Categories -->
+<section class="overlapping-section" id="products">
+  <h2 class="mb-5">Top Categories</h2>
+  <div class="row g-4 justify-content-center">
+    <!-- Laptops -->
+    <div class="col-md-4">
+      <div class="card product-card p-3 h-100 d-flex flex-column">
+        <i class="fas fa-laptop-code fa-3x mb-3 text-success"></i>
+        <h4>Laptops</h4>
+        <p>Portable, powerful, and AI-ready. Perfect for devs, students, and business minds. Brands like HP, Dell, and Lenovo.</p>
+        <a href="Laptop.html" class="btn btn-custom mt-auto">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Desktops -->
+    <div class="col-md-4">
+      <div class="card product-card p-3 h-100 d-flex flex-column">
+        <i class="fas fa-desktop fa-3x mb-3 text-info"></i>
+        <h4>Desktop PCs</h4>
+        <p>Built for speed, multitasking, and AI workloads. Ideal for gaming, editing, and office power tasks.</p>
+        <a href="Desktop.html" class="btn btn-custom mt-auto">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Accessories -->
+    <div class="col-md-4">
+      <div class="card product-card p-3 h-100 d-flex flex-column">
+        <i class="fas fa-plug fa-3x mb-3 text-warning"></i>
+        <h4>Tech Accessories</h4>
+        <p>Get mice, keyboards, headsets, USB hubs, and all your tech essentials — because no setup is complete without them.</p>
+        <a href="Accessories.html" class="btn btn-custom mt-auto">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4 mt-5">
+<small>Erick.M™ © 2025 DevLoom Technologies. Built with ❤️ and innovation.All rights reserved.  </small>
+                    </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
